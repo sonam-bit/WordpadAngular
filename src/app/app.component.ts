@@ -34,18 +34,18 @@ export class AppComponent {
     var textAreaMessage = document.querySelector(".txtArea")?.innerHTML ;
    this.message = `${this.message}\r\n`;  
    this.count=0;
-   textAreaMessage =  `${this.message}<br>`;
-   console.log(textAreaMessage);
+   textAreaMessage = this.message;
+
   }
 
   public addPoints()
   {
     var textAreaMessage = document.querySelector(".txtArea")?.innerHTML ;
    
-    this.message = `${this.message}\r\n `+ `${this.count}\r)`;  
+    this.message = `${this.message}\r\n `+ `${this.count})`;  
     this.count += 1;
     textAreaMessage = this.message;
-    console.log(textAreaMessage);
+
   }
 
   public clearAll()
