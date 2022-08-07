@@ -34,7 +34,7 @@ export class AppComponent {
     var textAreaMessage = document.querySelector(".txtArea")?.innerHTML ;
    this.message = `${this.message}\r\n`;  
    this.count=0;
-   textAreaMessage = this.message;
+   textAreaMessage =  `${this.message}<br>`;
    console.log(textAreaMessage);
   }
 
@@ -42,7 +42,7 @@ export class AppComponent {
   {
     var textAreaMessage = document.querySelector(".txtArea")?.innerHTML ;
    
-    this.message = `${this.message}\r\n `+ `${this.count})`;  
+    this.message = `${this.message}\r\n `+ `${this.count}\r)`;  
     this.count += 1;
     textAreaMessage = this.message;
     console.log(textAreaMessage);
